@@ -1,0 +1,103 @@
+:root, html, body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+@font-face {
+    font-family: lato;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: lato;
+    src: url(fonts/Roboto-Bold.ttf);
+    font-weight: Bold;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: grid;
+    grid-template-rows: 75px 75px minmax(618px, auto);
+    grid-template-columns: 224px minmax(800px, auto);
+
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: #2e7eec;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 30px);
+    grid-template-columns: 20px auto;
+    justify-items: start;
+    align-items: center;
+
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 6px 0 rgba(0, 0, 0, 0.19);
+}
+.icon > img {
+    width: 30px;
+    height: 30px;
+}
+.dashboard{
+    font-family: lato, Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+.photo > img{
+    width: 25px;
+    height: 25px;
+}
+.label{
+    font-family: lato, Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+.nav{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+}
+.nav-left{
+    display: grid;
+    grid-template-columns: 25px auto;
+    place-items: center start;
+    gap: 15px;
+}
+.nav-search > img, .nav-bell > img{
+    width: 25px;
+    height: 25px;
+}
+.nav-search{
+    width: 450px;
+    height: 30px;
+    background-color: rgb(221,221,221);
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.nav-right{
+    display: grid;
+    grid-template-columns: 25px 40px 80px;
+    place-items: center center;
+    gap: 15px;
+}
+.nav-photo > img{
+    width: 40px;
+    height: 40px;
+}
+.nav-name{
+    font-family: lato, Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
